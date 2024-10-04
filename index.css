@@ -293,6 +293,7 @@ footer{
     justify-content: space-evenly;
     align-items: center;
     background-color: white;
+    z-index: 9;
 }
 
 .foot_title{
