@@ -34,3 +34,53 @@ document.addEventListener('scroll', function(){
     red_blue_circle.style.marginRight = value * 0.2 + 'px';
 
 })
+
+const timelineSlider = document.querySelector('.timeline-slider');
+const timelineTrack = document.querySelector('.timeline-track');
+const arrowRight = document.getElementById('arrow-right');
+
+let isMouseDown = false;
+let startX;
+let scrollLeft;
+
+timelineSlider.addEventListener('mousedown', (e) => {
+    isMouseDown = true;
+    startX = e.pageX - timelineSlider.offsetLeft;
+    scrollLeft = timelineSlider.scrollLeft;
+    timelineSlider.style.cursor = 'grabbing';
+});
+
+timelineSlider.addEventListener('mouseleave', () => {
+    isMouseDown = false;
+    timelineSlider.style.cursor = 'grab';
+});
+
+timelineSlider.addEventListener('mouseup', () => {
+    isMouseDown = false;
+    timelineSlider.style.cursor = 'grab';
+});
+
+timelineSlider.addEventListener('mousemove', (e) => {
+    if (!isMouseDown) return;
+    e.preventDefault();
+    const x = e.pageX - timelineSlider.offsetLeft;
+    const walk = (x - startX) * 2; // Scroll-fast factor
+    timelineSlider.scrollLeft = scrollLeft - walk;
+});
+
+// Click event to scroll the timeline right using the arrow
+arrowRight.addEventListener('click', () => {
+    timelineSlider.scrollBy({ left: 200, behavior: 'smooth' });
+});
+
+function changeVideo(videoUrl, title) {
+    // Update the main video iframe source
+    document.getElementById('currentVideo').src = videoUrl;
+    
+    // Update the video title
+    document.querySelector('.heading').innerText = title;
+
+    // Update the sub-heading based on the title
+    const subHeading = document.querySelector('.heading');
+    subHeading.innerText = title.toUpperCase(); // Change to uppercase or format as needed
+}
