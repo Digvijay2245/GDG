@@ -282,8 +282,9 @@ input:checked + .slider:before {
 
 .events{
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header {
