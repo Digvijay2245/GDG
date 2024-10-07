@@ -267,6 +267,7 @@ body{
 }
 
 .register-btn {
+  text-decoration: none;
   background-color: #4387F6;
   color: white;
 }
