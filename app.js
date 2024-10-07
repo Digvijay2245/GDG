@@ -64,23 +64,19 @@ timelineSlider.addEventListener('mousemove', (e) => {
     if (!isMouseDown) return;
     e.preventDefault();
     const x = e.pageX - timelineSlider.offsetLeft;
-    const walk = (x - startX) * 2; // Scroll-fast factor
+    const walk = (x - startX) * 2;
     timelineSlider.scrollLeft = scrollLeft - walk;
 });
 
-// Click event to scroll the timeline right using the arrow
 arrowRight.addEventListener('click', () => {
     timelineSlider.scrollBy({ left: 200, behavior: 'smooth' });
 });
 
 function changeVideo(videoUrl, title) {
-    // Update the main video iframe source
     document.getElementById('currentVideo').src = videoUrl;
     
-    // Update the video title
     document.querySelector('.heading').innerText = title;
 
-    // Update the sub-heading based on the title
     const subHeading = document.querySelector('.heading');
-    subHeading.innerText = title.toUpperCase(); // Change to uppercase or format as needed
+    subHeading.innerText = title.toUpperCase();
 }
