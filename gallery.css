@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.green_plus{
+    position: absolute;
+    z-index: 10;
+    top: 150px;
+    right: 20px;
+}
+
+.red_dots{
+    position: absolute;
+    z-index: 10;
+    top: 80px;
+    right: 0;
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.summary{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.scroll-container {
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 10px 0;
+    background-color: white;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.box {
+    display: inline-block;
+    width: 25vw;
+    background-color: white;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.img {
+    width: 25vw;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    display: none;
+    z-index: 999;
+    overflow: auto;
+}
+
+.overlay img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+    cursor: zoom-out;
+}
+
+.overlay.active {
+    display: block;
+}
+
+.bottom{
+    width: 78vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+}
+
+.section{
+    margin-top: 20px;
+}
+
+.comment{
+    width: 50vw;
+    border-radius: 10px;
+    background-color: #4186f484;
+    color: white;
+    border: 0;
+    height: 40px;
+    padding-left: 20px;
+}
+
+.share{
+    height: 40px;
+    width: 10vw;
+    background-color: #4387F6;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid black;
+}
