@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hero_gd</title>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Mouse Memoirs' rel='stylesheet'>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="nav">
@@ -19,13 +17,13 @@
         </div>
         <input type="search" id="search" data-search placeholder="Search">
         <div class="nav_links">
-            <a href="" class="links">HOME</a>
-            <a href="" class="links">EVENTS</a>
-            <a href="" class="links">VIDEOS</a>
-            <a href="" class="links">GALLERY</a>
+            <a href="#hero" class="links">HOME</a>
+            <a href="#events_section" class="links">EVENTS</a>
+            <a href="#videos-section" class="links">VIDEOS</a>
+            <a href="#gallery_hero" class="links">GALLERY</a>
         </div>
     </div>
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero_title">
             <img src="GDSCUTM-Bracket.png" class="hero_logo">
             <div class="hero_heads">
@@ -46,176 +44,193 @@
         <img src="image 6.png" class="yellow_bottom">
         <img src="image 4.png" class="yellow_up">
     </section>
-    <section class="events">
-        <img src="events_heading.png" class="event_head">
-         <div class="event-container">
-        <div class="event-poster">
-            <img src="image.png" alt="Rebase Opening Ceremony">
+    <section class="events_section" id="events_section">
+        <div class="events-strip">
+          <img src="eve.png" alt="Events Strip" class="strip-image" />
         </div>
-        <div class="event-details">
+  
+        <div class="event-container">
+          <div class="event-poster">
+            <img src="rebase_yt.png" alt="Rebase Opening Ceremony" />
+          </div>
+          <div class="event-details">
             <h2>EVENT NAME</h2>
             <p>Date: DD/MM/YYYY</p>
+            <br /><br />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.
             </p>
             <div class="event-buttons">
-                <button class="register-btn">Register</button>
-                <button class="know-more-btn">Know More</button>
+              <button class="register-btn">Register</button>
+              <a href="event_details.html" class="know-more-btn">Know More</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="events_hero_bottom">
+          <div class="event-filter">
+            <label for="event-filter">Filter</label>
+            <select id="event-filter">
+              <option value="" disabled selected>Look for events based on</option>
+              <option value="upcoming">Upcoming Events</option>
+              <option value="past">Past Events</option>
+              <option value="category">Category</option>
+            </select>
+          </div>
+  
+          <div class="timeline-container">
+            <img src="diamond_logo.png" alt="Logo" class="timeline-logo" />
+  
+            <div class="timeline-slider">
+              <div class="timeline-track">
+                <div class="timeline-item">
+                  <div class="dot" style="background-color: #4285f4"></div>
+                  <p>EVENT<br />MONTH,YEAR</p>
+                </div>
+                <div class="timeline-item">
+                  <div class="dot" style="background-color: #fbbc05"></div>
+                  <p>EVENT<br />MONTH,YEAR</p>
+                </div>
+                <div class="timeline-item">
+                  <div class="dot" style="background-color: #34a853"></div>
+                  <p>EVENT<br />MONTH,YEAR</p>
+                </div>
+                <div class="timeline-item">
+                  <div class="dot" style="background-color: #ea4335"></div>
+                  <p>EVENT<br />MONTH,YEAR</p>
+                </div>
+                <div class="timeline-item">
+                  <div class="dot" style="background-color: #4285f4"></div>
+                  <p>EVENT<br />MONTH,YEAR</p>
+                </div>
+                <div class="timeline-item">
+                  <div class="dot" style="background-color: #fbbc05"></div>
+                  <p>EVENT<br />MONTH,YEAR</p>
+                </div>
+                <div class="timeline-item">
+                  <div class="dot" style="background-color: #34a853"></div>
+                  <p>EVENT<br />MONTH,YEAR</p>
+                </div>
+                <div class="timeline-item">
+                  <div class="dot" style="background-color: #ea4335"></div>
+                  <p>EVENT<br />MONTH,YEAR</p>
+                </div>
+              </div>
+            </div>
+            <img src="arrow.png" class="arrow">
+          </div>
+        </div>
+      </section>
+
+      <section class="videos-section" id="videos-section">
+        <img src="videos_strip.png" alt="Events Strip" class="videos-strip">
+        
+        <img src="red_quad.png" class="red_quad_videos">
+        <img src="green_plus.png" class="green_plus_videos">
+        <img src="red_dots.png" class="red_dots_videos">
+        <img src="blue_star.png" class="blue_star_videos">
+        <img src="red_flower.png" class="red_flower_videos">
+        <img src="WeirdCircle.png" class="weird_circle_videos">
+        <img src="green_dots.png" class="green_dots_videos">
+
+        <h3 class="heading">RECENTS</h3>
+
+        <div class="main-video">
+            <iframe id="currentVideo" src="https://www.youtube.com/embed/P-PWfLDBNNY" frameborder="0" allowfullscreen></iframe> 
+        </div>
+
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <h2 class="sub-heading">WATCH MORE VIDEOS</h2>
+        <div class="video-thumbnails">
+            <div class="thumbnail" onclick="changeVideo('https://www.youtube.com/embed/P-PWfLDBNNY', 'TALKS')">
+                <img src="rebase_banner.png" alt="Talks">
+                <p class="talks">TALKS</p>
+            </div>
+            <div class="thumbnail" onclick="changeVideo('https://www.youtube.com/embed/P-PWfLDBNNY', 'HEADLINE')">
+                <img src="rebase_banner.png" alt="Headline">
+                <p class="headline">HEADLINE</p>
+            </div>
+            <div class="thumbnail" onclick="changeVideo('https://www.youtube.com/embed/P-PWfLDBNNY', 'EVENT RECAPS')">
+                <img src="rebase_banner.png" alt="Event Recaps">
+                <p class="recap">EVENT RECAPS</p>
+            </div>
+            <div class="thumbnail" onclick="changeVideo('https://www.youtube.com/embed/P-PWfLDBNNY', 'WORKSHOPS')">
+                <img src="rebase_banner.png" alt="Workshops">
+                <p class="workshops">WORKSHOPS</p>
             </div>
         </div>
-    </div>
-
-    <div class="event-filter">
-        <label for="event-filter">Filter</label>
-        <select id="event-filter">
-            <option value="" disabled selected>Look for events based on</option>
-            <option value="upcoming">Upcoming Events</option>
-            <option value="past">Past Events</option>
-            <option value="category">Category</option>
-        </select>
-    </div>
-
-    <div class="timeline-container">
-      <!-- Left logo image -->
-      <img src="Logo.png" alt="Logo" class="timeline-logo">
-      
-      <!-- Timeline slider -->
-      <div class="timeline-slider">
-          <div class="timeline-track">
-              <div class="timeline-item">
-                  <div class="dot" style="background-color: #4285F4;"></div>
-                  <p>EVENT<br>MONTH,YEAR</p>
-              </div>
-              <div class="timeline-item">
-                  <div class="dot" style="background-color: #FBBC05;"></div>
-                  <p>EVENT<br>MONTH,YEAR</p>
-              </div>
-              <div class="timeline-item">
-                  <div class="dot" style="background-color: #34A853;"></div>
-                  <p>EVENT<br>MONTH,YEAR</p>
-              </div>
-              <div class="timeline-item">
-                  <div class="dot" style="background-color: #EA4335;"></div>
-                  <p>EVENT<br>MONTH,YEAR</p>
-              </div>
-              <div class="timeline-item">
-                  <div class="dot" style="background-color: #4285F4;"></div>
-                  <p>EVENT<br>MONTH,YEAR</p>
-              </div>
-              <div class="timeline-item">
-                  <div class="dot" style="background-color: #FBBC05;"></div>
-                  <p>EVENT<br>MONTH,YEAR</p>
-              </div>
-              <div class="timeline-item">
-                  <div class="dot" style="background-color: #34A853;"></div>
-                  <p>EVENT<br>MONTH,YEAR</p>
-              </div>
-              <div class="timeline-item">
-                  <div class="dot" style="background-color: #EA4335;"></div>
-                  <p>EVENT<br>MONTH,YEAR</p>
-              </div>
-          </div>
-      </div>
     </section>
 
-   
-      
-  </div>
+    <section class="gallery_hero" id="gallery_hero">
+        <img src="gallery_strip.png" class="gallery_heading" />
+        <img src="blue_star.png" class="blue_star_gallery" />
+        <img src="red_blue_circle.png" class="red_blue_circle_gallery" />
+        <img src="red_dots.png" class="red_dots_gallery" />
+        <img src="green_plus.png" class="green_plus_gallery" />
 
-  <div class="videos-section">
-    <div class="videos-strip">
-        <img src="WhatsApp Image 2024-10-04 at 3.19.17 PM (1).jpeg" alt="Events Strip" class="strip-image">
-    </div>
-    <h2 class="heading">RECENTS</h2>
-
-    <div class="main-video">
-        <iframe id="currentVideo" src="https://www.youtube.com/embed/P-PWfLDBNNY" frameborder="0" allowfullscreen></iframe>
-       
-    </div>
-
-    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-    <h2 class="sub-heading">WATCH MORE VIDEOS</h2>
-    <div class="video-thumbnails">
-        <div class="thumbnail" onclick="changeVideo('https://www.youtube.com/embed/P-PWfLDBNNY', 'TALKS')">
-            <img src="image.png" alt="Talks">
-            <p class="talks">TALKS</p>
+        <div class="gallery">
+          <div class="filter">
+            <select id="event-filter">
+              <option value="">Look for events basend on:</option>
+            </select>
+          </div>
+          <div class="gallery_cards_horizontal">
+            
+            <a href="gallery.html" class="event-card" id="card_1">
+              <img
+                src="event_banner.png"
+                alt="Event Thumbnail"
+              />
+              <h2>Event-A</h2>
+            </a>
+            
+            <a href="gallery.html" class="event-card" id="card_2">
+              <img
+                src="event_banner.png"
+                alt="Event Thumbnail"
+              />
+              <h2>Event-B</h2>
+            </a>
+            
+            <a href="gallery.html" class="event-card" id="card_3">
+              <img
+                src="event_banner.png"
+                alt="Event Thumbnail"
+              />
+              <h2>Event-C</h2>
+            </a>
+          </div>
         </div>
-        <div class="thumbnail" onclick="changeVideo('https://www.youtube.com/embed/P-PWfLDBNNY', 'HEADLINE')">
-            <img src="image.png" alt="Headline">
-            <p class="headline">HEADLINE</p>
-        </div>
-        <div class="thumbnail" onclick="changeVideo('https://www.youtube.com/embed/P-PWfLDBNNY', 'EVENT RECAPS')">
-            <img src="image.png" alt="Event Recaps">
-            <p class="recap">EVENT RECAPS</p>
-        </div>
-        <div class="thumbnail" onclick="changeVideo('https://www.youtube.com/embed/P-PWfLDBNNY', 'WORKSHOPS')">
-            <img src="image.png" alt="Workshops">
-            <p class="workshops">WORKSHOPS</p>
-        </div>
-    </div>
-</div>
+      </section>
 
-<header>
-    <h1>GALLERY</h1>
-</header>
-<div class="group-5">
-    <img src="semi-circle.png" id="semi-circle">
-    <img src="circle.png" id="circle">
-</div>
-<img src="Dot-Grid.png" class="dot-grid">
-<img src="icon.png" class="icon_plus">
-<img src="Soft-Star.png" class="star-image">
-<!-- Filter Dropdown -->
-<div class="filter">
-    <select id="event-filter">
-        <option value="" disabled selected>Look for events basend on:</option>
-        <option value="upcoming">Upcoming Events</option>
-        <option value="Ongoing">Ongoing Events</option>
-        <option value="past">Past Events</option>
-    </select>
-</div>
-
-<!-- Event Gallery Section -->
-<div class="gallery">
-    <!-- Event Card 1 -->
-    <div class="event-card">
-        <img src="https://s3-alpha-sig.figma.com/img/f80e/486d/500c3569ddad91a57fb0f63fff89e42d?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aL-ZuJC-akkMf6umADLPLuBOa9Sgdzo0ZdFmuVwzlL~EEElp6WiAG2Gu3-LuHLLtwU-362~ea583RHXnaZJQHJtYJRDhw70HINpDAOZOOIosRXEHJhIy-fvl8-G8bk7g1VRhaszH9eFkkQF6J9FO-hXa5b7XuHHgcBSzL75XSekkUSSfxAj2FbpIvfMRRcapivMrfd7RajYFfNlUxe9V-YHJDZRdmdW2osaPx5LgwgqenCYYsDwGaJFFQWCdq4Bcw1g8m88DzD4Ud5008DWOzNod~VPxxrk5pg0uNTCbskyrieJiLp3Ys5~Ir7TuGzUmIPORFlOZdZs7w30riKmzhA__" alt="Event Thumbnail">
-        <h2>Event-A</h2>
-    </div>
-    <!-- Event Card 2 -->
-    <div class="event-card">
-        <img src="https://s3-alpha-sig.figma.com/img/f80e/486d/500c3569ddad91a57fb0f63fff89e42d?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aL-ZuJC-akkMf6umADLPLuBOa9Sgdzo0ZdFmuVwzlL~EEElp6WiAG2Gu3-LuHLLtwU-362~ea583RHXnaZJQHJtYJRDhw70HINpDAOZOOIosRXEHJhIy-fvl8-G8bk7g1VRhaszH9eFkkQF6J9FO-hXa5b7XuHHgcBSzL75XSekkUSSfxAj2FbpIvfMRRcapivMrfd7RajYFfNlUxe9V-YHJDZRdmdW2osaPx5LgwgqenCYYsDwGaJFFQWCdq4Bcw1g8m88DzD4Ud5008DWOzNod~VPxxrk5pg0uNTCbskyrieJiLp3Ys5~Ir7TuGzUmIPORFlOZdZs7w30riKmzhA__" alt="Event Thumbnail">
-        <h2>Event-B</h2>
-    </div>
-    <!-- Event Card 3 -->
-    <div class="event-card">
-        <img src="https://s3-alpha-sig.figma.com/img/f80e/486d/500c3569ddad91a57fb0f63fff89e42d?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aL-ZuJC-akkMf6umADLPLuBOa9Sgdzo0ZdFmuVwzlL~EEElp6WiAG2Gu3-LuHLLtwU-362~ea583RHXnaZJQHJtYJRDhw70HINpDAOZOOIosRXEHJhIy-fvl8-G8bk7g1VRhaszH9eFkkQF6J9FO-hXa5b7XuHHgcBSzL75XSekkUSSfxAj2FbpIvfMRRcapivMrfd7RajYFfNlUxe9V-YHJDZRdmdW2osaPx5LgwgqenCYYsDwGaJFFQWCdq4Bcw1g8m88DzD4Ud5008DWOzNod~VPxxrk5pg0uNTCbskyrieJiLp3Ys5~Ir7TuGzUmIPORFlOZdZs7w30riKmzhA__" alt="Event Thumbnail">
-        <h2>Event-C</h2>
-    </div>
-</div>
-
-    <footer>
-    <div class="foot_title">
-        <img src="GDSCUTM-Bracket.png" class="foot_logo">
-        <div class="foot_heads">
-            <p class="foot_gdg">Google Developer Groups</p>
-            <p class="foot_iiit">Indian Institute of Information Technology, Kalyani </p>
+      <footer>
+        <div class="foot_title">
+            <img src="GDSCUTM-Bracket.png" class="foot_logo">
+            <div class="foot_heads">
+                <p class="foot_gdg">Google Developer Groups</p>
+                <p class="foot_iiit">Indian Institute of Information Technology, Kalyani </p>
+            </div>
         </div>
-    </div>
-    <div class="foot_mail">
-        <img src="icons8-mail-100.png" class="mail_img">
-        <p class="mail">dsc.iiitkalyani@gmail.com</p>
-    </div>
-    <div class="foot_socials">
-        <a href=""><img src="icons8-instagram-100.png" class="foot_img"></a>
-        <a href=""><img src="icons8-facebook-100.png" class="foot_img"></a>
-        <a href=""><img src="icons8-linkedin-100.png" class="foot_img"></a>
-        <a href=""><img src="icons8-x-100.png" class="foot_img"></a>
-        <a href=""><img src="icons8-github-100.png" class="foot_img"></a>
-        <a href=""><img src="icons8-youtube-100.png" class="foot_img"></a>
-    </div>
-    </footer>
-    <script src="index.js"></script>
+        <div class="foot_mail">
+            <img src="icons8-mail-100.png" class="mail_img">
+            <p class="mail">dsc.iiitkalyani@gmail.com</p>
+        </div>
+        <div class="foot_socials">
+            <a href="https://www.instagram.com/gdsciiitkalyani/"><img src="icons8-instagram-100.png" class="foot_img"></a>
+            <a href=""><img src="icons8-facebook-100.png" class="foot_img"></a>
+            <a href="https://www.linkedin.com/company/gdsc-iiit-kalyani/?originalSubdomain=in"><img src="icons8-linkedin-100.png" class="foot_img"></a>
+            <a href="https://x.com/gdsciiitkalyani"><img src="icons8-x-100.png" class="foot_img"></a>
+            <a href="https://github.com/GDSC-IIIT-Kalyani"><img src="icons8-github-100.png" class="foot_img"></a>
+            <a href="https://www.youtube.com/channel/UCvRPKamvUtnQhij5y1MF11A"><img src="icons8-youtube-100.png" class="foot_img"></a>
+        </div>
+        </footer>
+    <script src="app.js"></script>
 </body>
 </html>
